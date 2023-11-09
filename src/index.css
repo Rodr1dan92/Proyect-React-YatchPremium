@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Hero {
+  background: url("./assets/images/navegation-header.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Hero .cart-icon {
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  top: 45px;
+}
+
+.Hero .home_overlay {
+  
+  height: 80vh;
+  width: 90vw;
+  padding: 2rem;
+  margin: 20px 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.4) 50%,
+    rgba(11, 12, 16, 0.37) 60%,
+    rgba(11, 12, 16, 0.3) 70%,
+    rgba(10, 10, 10, 0.25) 80%,
+    rgba(11, 12, 16, 0.15) 90%,
+    rgba(11, 12, 16, 0.05) 100%
+  );
+}
+
+.home_rectangle {
+  border: 3px solid #ebe1e1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home_rectangle .title1,
+.title2 {
+  color: #fff;
+  font-size: 8.7vh;
+  font-weight: 700;
+  font-family: "FF Mark", Arial, sans-serif;
+}
+
+.Navlink {
+  color: azure;
+  font-size: 20px;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#gallery {
+  min-height: 100vh;
+  background-color: darkorange;
+  padding-bottom: 2rem;
+}
+
+.grid-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "uno uno dos dos"
+    "uno uno tres cuatro"
+    "cinco seis siete siete"
+    "ocho seis siete siete";
+}
+
+.grid-box {
+  height: 28rem;
+  width: 100%;
+  cursor: pointer;
+  &:nth-of-type(1) {
+    grid-area: uno;
+    background: url(./assets/images/gallery-1.jpg) no-repeat right center;
+    background-size: cover;
+    height: 100%;
+  }
+  &:nth-of-type(2) {
+    grid-area: dos;
+    background: url(./assets/images/gallery-2.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  &:nth-of-type(3) {
+    grid-area: tres;
+    background: url(./assets/images/gallery-3.jpg) no-repeat right center;
+    background-size: cover;
+  }
+  &:nth-of-type(4) {
+    grid-area: cuatro;
+    background: url(./assets/images/gallery-4.jpg) no-repeat right center;
+    background-size: cover;
+  }
+  &:nth-of-type(5) {
+    grid-area: cinco;
+    background: url(./assets/images/gallery-5.jpg) no-repeat right center;
+    background-size: cover;
+  }
+  &:nth-of-type(6) {
+    grid-area: seis;
+    background: url(./assets/images/gallery-6.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+  }
+  &:nth-of-type(7) {
+    grid-area: siete;
+    background: url(./assets/images/Fantasy-big-yatch.jpg) no-repeat right
+      center;
+    background-size: cover;
+    height: 100%;
+  }
+  &:nth-of-type(8) {
+    grid-area: ocho;
+    background: url(./assets/images/chunk-medium-yatch.jpg) no-repeat right
+      center;
+    background-size: cover;
+  }
+}
+
+.list-col-one {
+  color: #fff;
+  font-weight: 500;
+  list-style-type: none;
+  text-align: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.list-col-one:hover {
+  color: yellow;
+}
